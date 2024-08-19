@@ -1,14 +1,13 @@
 {
-    "packages": [
-      "nodejs",
-      "gh",
-      "jq"
-    ],
-    "shell": {
-      "init_hook": [
-        "export NODE_ENV=development",
-        "export PATH=./node_modules/.bin:$PATH"
-      ]
-    }
+  "packages": ["nodejs@18", "gh", "jq"],
+  "env": {
+    "DEVBOX_COREPACK_ENABLED": "true"
+  },
+  "shell": {
+    "init_hook": [
+      "export NODE_ENV=development",
+      "export PATH=./node_modules/.bin:$PATH",
+      "npm install"
+    ]
   }
-  
+}
