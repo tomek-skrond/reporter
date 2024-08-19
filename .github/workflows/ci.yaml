@@ -1,5 +1,7 @@
 on:
   push:
+    branches:
+      - none
 
 jobs:
   ci:
