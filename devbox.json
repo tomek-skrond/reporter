@@ -1,0 +1,14 @@
+{
+    "packages": [
+      "nodejs",
+      "gh",
+      "jq"
+    ],
+    "shell": {
+      "init_hook": [
+        "export NODE_ENV=development",
+        "export PATH=./node_modules/.bin:$PATH"
+      ]
+    }
+  }
+  
